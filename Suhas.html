@@ -3,178 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramya Portfolio</title>
+    <title>My Shop</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
         }
 
         body {
-            background: #e8d9a8;
-            padding: 30px;
+            background: #f7f7f7;
         }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff8dc;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .intro {
+        /* Header */
+        header {
+            background: #222;
+            color: #fff;
             display: flex;
-            gap: 20px;
+            justify-content: space-between;
+            padding: 15px 40px;
             align-items: center;
         }
 
-        .photo-card img {
-            width: 180px;
-            height: 230px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 3px solid #c49a6c;
-        }
-
-        .intro-text h1 {
-            font-size: 36px;
-            color: #7a2c2c;
-        }
-
-        .intro-text h1 span {
-            color: #9c2727;
-            font-weight: bold;
-        }
-
-        .intro-text h2 {
-            color: #333;
-        }
-
-        .intro-text p {
-            margin-top: 10px;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        section {
-            margin-top: 35px;
-            padding: 20px;
-            background: #fff9e6;
-            border-left: 5px solid #c49a6c;
-            border-radius: 10px;
-        }
-
-        section h2 {
+        header .logo {
             font-size: 24px;
             font-weight: bold;
-            color: #7a2c2c;
-            margin-bottom: 10px;
         }
 
-        ul li {
-            margin: 5px 0;
-            font-size: 15px;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
         }
 
-        .edu-item {
-            margin-bottom: 15px;
+        nav a:hover {
+            color: #ffd700;
         }
 
-        .contact p {
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') center/cover;
+            padding: 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            margin-top: 10px;
             font-size: 18px;
-            margin: 5px 0;
         }
 
-        @media (max-width: 768px) {
-            .intro {
-                flex-direction: column;
-                text-align: center;
-            }
+        .hero button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #ffd700;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-            .photo-card img {
-                width: 60%;
-            }
+        /* Products Section */
+        .products {
+            padding: 40px 60px;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background: #444;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
         }
     </style>
-</head>
 
+</head>
 <body>
 
-<div class="container">
-
-    <header class="intro">
-        <div class="photo-card">
-            <img src="your-photo.jpg" alt="Profile Photo">
-        </div>
-
-        <div class="intro-text">
-            <h2>Hello!</h2>
-            <h1>I'm <span>Ramya</span></h1>
-            <p>
-                A passionate and dedicated Information Technology student with a strong
-                interest in Web Development and UI/UX Design. I enjoy building 
-                innovative projects that solve real-world problems.
-            </p>
-        </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <section class="goal">
-        <h2>My Goal</h2>
-        <p>
-            To apply my skills in real-world projects, collaborate with like-minded 
-            individuals, and create innovative solutions that make a difference.
-        </p>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Welcome to My Shop</h1>
+        <p>Best products at amazing prices</p>
+        <button>Shop Now</button>
     </section>
 
-    <section class="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>Comparison website – project</li>
-            <li>District Explore Website – project</li>
-            <li>Worked using web development tools</li>
-            <li>Improved my skills</li>
-            <li>Developed real-life focused website</li>
-            <li>Skills: HTML, CSS, JavaScript, UI/UX Design</li>
-            <li>Collaborated with a team to build a website</li>
-        </ul>
-    </section>
+    <!-- Products -->
+    <section class="products">
+        <h2>Our Products</h2>
 
-    <section class="education">
-        <h2>Education</h2>
+        <div class="product-grid">
 
-        <div class="edu-item">
-            <h4>2008 – 2023</h4>
-            <p>Schwartz Matriculation Higher Secondary School, Ramanathapuram</p>
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Product 1</h3>
+                <p>$20</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Product 2</h3>
+                <p>$25</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Product 3</h3>
+                <p>$30</p>
+                <button>Add to Cart</button>
+            </div>
+
         </div>
-
-        <div class="edu-item">
-            <h4>2023 – 2027</h4>
-            <p>Coimbatore Institute of Engineering and Technology</p>
-        </div>
     </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>UI/UX Design</li>
-            <li>Digital Drawing</li>
-            <li>Photo Editing</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
-
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>📞 +2233445566</p>
-        <p>📧 ramya38@gmail.com</p>
-    </section>
-
-</div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MyShop. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
